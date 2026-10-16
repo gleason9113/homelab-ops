@@ -8,4 +8,9 @@ Documents changes to networks, servers, and connected devices.
 
 - Updated admin password for PiHole service on netone.
 - Fixed fail2ban jail conf and started service on netone.
- 
+
+ ## - 16OCT2026
+
+ ### Added
+
+ - Installed and configured Wikijs in Docker on netone.
