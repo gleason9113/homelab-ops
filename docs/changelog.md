@@ -7,3 +7,5 @@ Documents changes to networks, servers, and connected devices.
 ### Changed
 
 - Updated admin password for PiHole service on netone.
+- Fixed fail2ban jail conf and started service on netone.
+ 
