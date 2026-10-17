@@ -14,3 +14,10 @@ Documents changes to networks, servers, and connected devices.
  ### Added
 
  - Installed and configured Wikijs in Docker on netone.
+
+ ## 17OCT2026
+
+ ### Added
+
+ - Installed and configured Gitea in Docker on netone.
+ - Cloned docs repo over and verified visibility in browser.
