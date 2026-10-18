@@ -23,3 +23,9 @@ Documents changes to networks, servers, and connected devices.
  - Cloned docs repo over and verified visibility in browser.
  - Configured Wikijs to pull from local Gitea repo.
  - Pointed local repo to Gitea repo.
+
+ ## 18OCT2026
+
+ ### Changed
+ 
+ - Still working on the docs pipeline.  Setting up ssh auth all the way through.
