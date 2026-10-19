@@ -31,3 +31,4 @@ Documents changes to networks, servers, and connected devices.
  - Still working on the docs pipeline.  Setting up ssh auth all the way through.
  - Pipeline close to ready.  Testing.
  - Getting close.  Test 5.
+ - Closer.  Test 6.
