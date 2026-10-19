@@ -29,3 +29,4 @@ Documents changes to networks, servers, and connected devices.
  ### Changed
  
  - Still working on the docs pipeline.  Setting up ssh auth all the way through.
+ - Pipeline close to ready.
