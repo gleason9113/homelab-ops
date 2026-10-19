@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Purpose:  Gather system information and generate a Markdown report for documentation.
+
 # Work in progress: This script is a work in progress and may not be production-ready.
 # Gather system info
 
@@ -24,6 +26,8 @@ cpu_info="Sockets / Cores / Threads: $sockets / $cores / $threads"
 total_mem=$(free -h | awk 'NR==2 {print $2}')
 vm_status=$(systemd-detect-virt)
 default_gateway=$(ip route | grep default | awk '{print $3}')
+
+OUTPUT="sys_report_${host_name}.md"
 
 storage_table=$(df -h --output=target,source,fstype,size,used,avail,pcent -x devtmpfs -x tmpfs | \
 awk 'NR==1 {print "| Mount Point | Device | Type | Total Size | Used | Available | Use % |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |"} \
@@ -50,7 +54,12 @@ NR>1 {
 
 # Format and generate Markdown report
 
-report_file="sysrep_${host_name}.md"
+if [ -e "$OUTPUT" ]; then
+  rm -rf $OUTPUT
+fi
+
+
+report_file="$OUTPUT"
 
 cat << EOF > "${report_file}"
 # System Documentation Report
