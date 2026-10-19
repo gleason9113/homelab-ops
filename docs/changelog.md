@@ -41,3 +41,10 @@ Documents changes to networks, servers, and connected devices.
  - Adjusted configurations until I was successful in pushing from my local repo all the way to the github repo.
  - Added webhook as a daemon on host netone.
  
+ ## 19OCT2026
+
+- Network:  Assigned SW_Primary Port 6 to VLAN 2 (mgmt)
+- Network:  Added hostname netone.internal to local DNS records.
+- Verified internal browsers now correctly resolve netone.internal addresses. My bookmarks look so much nicer now.
+- Added hostname nettwo.internal to local DNS records.
+ 
