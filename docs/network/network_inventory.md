@@ -50,7 +50,6 @@ This document tracks information about network infrastructure.
 - **Device Version:** 6.7.41
 - **WiFi Networks:** All
 
-
 ### Access Point
 - **Model:** UniFi U6+
 - **Name:** `BR_AP`
