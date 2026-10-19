@@ -1,0 +1,45 @@
+Homelab Gitea-to-GitHub Sync Pipeline
+1. Architecture Overview
+
+    Source of Truth: A private local Gitea instance running on netone (192.168.2.20:3000), storing your homelab operations documentation and notes.
+
+    Destination: A public GitHub repository (gleason9113/homelab-ops.git).
+
+    Trigger Mechanism: Gitea Push Webhook firing a POST request to a lightweight listener daemon (webhook) running on port 9000 ([http://192.168.2.20:9000/hooks/gitea-to-github](http://192.168.2.20:9000/hooks/gitea-to-github)).
+
+    Automation Engine: A custom Bash script (wash_sync.sh) that handles cloning/fetching over SSH, directory sanitation, and force-pushing to GitHub.
+
+2. Key Components & Implementation Steps
+A. The Automation Script (wash_sync.sh)
+
+Located in ~/webhook-git-sync/, the script automates the full cleaning and propagation cycle:
+
+    Repository Handling: Clones the repository locally if missing, or performs a git fetch and hard reset against origin/main using secure SSH strings (ssh://git@192.168.2.20:222/fr0sty/homelab-ops.git).
+
+    Scrubbing & Exclusion: Automatically purges the private scratch directory (docs/excluded) to prevent raw or internal notes from reaching the public repository.
+
+    Data Sanitization: Utilizes sed search-and-replace routines to automatically scrub sensitive patterns (such as local private IP ranges and internal hostnames like netone) from all markdown (.md) files.
+
+    Public Propagation: Adds the GitHub remote destination, stages the sanitized changes, commits with an automated message, and force-pushes the main branch via SSH key authentication (id_ed25519).
+
+B. Webhook Listener Daemon (webhook)
+
+    Configured using hooks.json mapping incoming requests on port 9000 to execute wash_sync.sh.
+
+    Launched as a background service binding to all interfaces (0.0.0.0) to allow internal Docker container routing.
+
+C. Overcoming Integration Roadblocks
+
+    Gitea SSRF Security (ALLOWED_HOST_LIST): Resolved internal Gitea webhook blocking by updating Gitea's configuration to permit outbound payloads destined for local network subnets (192.168.2.0/24).
+
+    SSH vs. HTTP Alignment: Shifted both internal Gitea operations and the sync script away from HTTP authentication over to secure SSH URLs (port 222 for Gitea, standard SSH for GitHub) backed by persistent environment variables (GIT_SSH_COMMAND).
+
+    Execution Path Resolution: Aligned the exact file naming (wash_sync.sh) between the webhook's hooks.json definition and the local filesystem to ensure zero-error execution upon trigger arrival.
+
+3. Verification & Operational Status
+
+A live test push successfully triggered the daemon, executed the sanitization script, and completed an automated push to GitHub:
+
+    Gitea delivered a 200 OK webhook payload.
+
+    The script successfully pulled updates, dropped excluded documentation folders, redacted sensitive references, and pushed the clean state to GitHub (To github.com:gleason9113/homelab-ops.git).

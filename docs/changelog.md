@@ -35,3 +35,9 @@ Documents changes to networks, servers, and connected devices.
  - Webhook restarted - test 7.
  - Step by step.  Test 8.
  - Webhook appears to be working.  Pushing test 9.
+
+ - Updated Gitea instance to use ssh authentication.
+ - Wrote script to sanitize and sync repos with public github repo.
+ - Adjusted configurations until I was successful in pushing from my local repo all the way to the github repo.
+ - Added webhook as a daemon on host netone.
+ 
