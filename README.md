@@ -69,9 +69,9 @@ This repo is in progress - please pardon the rough formatting and editing in pla
 
 | VLAN ID | Name / Zone | Subnet Range | Purpose & Access Control |
 | :--- | :--- | :--- | :--- |
-| **VLAN 2** | Management (`mgmt`) | `192.168.2.0/24` | Core infrastructure, hypervisors, switches, and gateway management planes. |
-| **VLAN 3** | Trusted (`trusted`) | `192.168.3.0/24` | Primary workstations, servers (`netone.internal`), and trusted internal clients. |
-| **VLAN 4** | IoT (`iot`) | *Configured* | Smart home devices, isolated from trusted compute and management planes. |
-| **VLAN 5** | Guest (`guest`) | *Configured* | Isolated wireless access for visitors with strict internet-only egress. |
+| **VLAN 2** | Management (`mgmt`) | `192.xx.xx0/24` | Core infrastructure, hypervisors, switches, and gateway management planes. |
+| **VLAN 3** | Trusted (`trusted`) | `192.xx.xx.0/24` | Primary workstations, servers (`netone.internal`), and trusted internal clients. |
+| **VLAN 4** | IoT (`iot`) | `192.xx.xx.0/24` | Smart home devices, isolated from trusted compute and management planes. |
+| **VLAN 5** | Guest (`guest`) | `192.xx.xx.0/24` | Isolated wireless access for visitors with strict internet-only egress. |
 
 
