@@ -5,6 +5,10 @@ Documentation for home network, lab, and projects.
 
 This repo is in progress - please pardon the rough formatting and editing in places.
 
+# Organization
+
+Under the /docs directory, you will find documentation on the network infrastructure, SOPs and standards (currently in /docs/processes), and information specific to devices on the network can be found under /docs/servers.  Documentation of services and projects running on a given machine can be found in that machine's directory.
+
 ## Network Infrastructure
 
 ### Inventory

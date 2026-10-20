@@ -39,3 +39,9 @@ Next projects are: finalize netone, configure nettwo, set up pihole/network moni
 Goals today are pretty simple - complete the pipeline:
 
 Gitea -> Sanitizer -> public repo.  Get a functional README created.  Let's go.
+
+### 19OCT2026
+
+Updates from yesterday - success.  The doc sync pipeline seems fully functional.  This file is syncing correctly to the internal repo and is removed from the external.  
+
+I have put together a rudimentary README as well, so I think I can go live with the public repo.
