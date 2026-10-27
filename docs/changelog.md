@@ -47,4 +47,12 @@ Documents changes to networks, servers, and connected devices.
 - Network:  Added hostname netone.internal to local DNS records.
 - Verified internal browsers now correctly resolve netone.internal addresses. My bookmarks look so much nicer now.
 - Added hostname nettwo.internal to local DNS records.
- 
+
+## 27OCT2026
+
+Was out sick for a week or thereabouts.  Just getting back into the swing of things.
+- Finished basic config of nettwo.
+- Started setting up Mac Mini as Home Assitant server:
+** Installed Golden Gate.
+** Installed Homebrew. 
+** Installed UTM
