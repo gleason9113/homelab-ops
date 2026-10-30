@@ -26,7 +26,7 @@
 | **CPU Model** | Intel(R) Core(TM) i5-6400T CPU @ 2.20GHz |
 | **CPU Topology (Sockets / Cores / Threads)** | 1 / 4 / 4 |
 | **Total Memory** | 15Gi |
-| **Default Network Gateway** | 192.168.2.1 |
+| **Default Network Gateway** | 192.xx.xx.xx |
 
 ---
 
@@ -47,7 +47,7 @@
 | :--- | :--- | :--- | :--- |
 | systemd-resolve | udp | 53 | 127.0.0.54 |
 | systemd-resolve | udp | 53 | 127.0.0.53%lo |
-| systemd-network | udp | 68 | 192.168.2.21%eno1 |
+| systemd-network | udp | 68 | 192.xx.xx.xx%eno1 |
 | chronyd | udp | 323 | 127.0.0.1 |
 | chronyd | udp | 323 | [::1] |
 | systemd-resolve | tcp | 53 | 127.0.0.54 |

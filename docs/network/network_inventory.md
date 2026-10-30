@@ -8,7 +8,7 @@ This document tracks information about network infrastructure.
 
 | Device Role | Model | Name | IP Address | MAC Address |
 | :--- | :--- | :--- | :--- | :--- |
-| **Modem** | Netgear CM3000 | - | `192.168.100.1` | `XX:XX:XX:XX:XX:68` |
+| **Modem** | Netgear CM3000 | - | `192.xx.xx.xx` | `XX:XX:XX:XX:XX:68` |
 | **Router** | UniFi UCG Ultra | `Gateway` | `192.168.X.1` | `XX:XX:XX:XX:XX:bd` |
 | **Switch** | USW Ultra 60W | `SW_Primary` | `192.168.X.X` | `XX:XX:XX:XX:XX:6a` |
 | **Switch** | USW Ultra 60W | `SW_Secondary` | `192.168.X.X` | `XX:XX:XX:XX:XX:ce` |
@@ -22,7 +22,7 @@ This document tracks information about network infrastructure.
 - **S/N:** `XXXXXXXXXXXX`
 - **HW Version:** 1.01
 - **Cable FW Version:** 6.01.04
-- **Admin Interface:** `192.168.100.1`
+- **Admin Interface:** `192.xx.xx.xx`
 
 ### Router
 - **Model:** UniFi Cloud Gateway Ultra (UCG Ultra)
