@@ -53,6 +53,17 @@ Documents changes to networks, servers, and connected devices.
 Was out sick for a week or thereabouts.  Just getting back into the swing of things.
 - Finished basic config of nettwo.
 - Started setting up Mac Mini as Home Assitant server:
-** Installed Golden Gate.
-** Installed Homebrew. 
-** Installed UTM
+* - Installed Golden Gate.
+* - Installed UTM.
+* - Installed Homebrew.
+* - Installed xz.
+* - Installed HA.
+* - Installed Ollama.
+* - Installed Docker and basic net utilities on nettwo.
+
+## 30OCT2026
+
+Lots of paperwork this week.  But finally:
+- Configured pihole on nettwo.internal
+- Installed and configured Prometheus + Grafana stack on nettwo.internal
+
