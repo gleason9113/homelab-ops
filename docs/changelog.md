@@ -67,3 +67,7 @@ Lots of paperwork this week.  But finally:
 - Configured pihole on nettwo.internal
 - Installed and configured Prometheus + Grafana stack on nettwo.internal
 
+## 04NOV2026
+
+I've spent days beating my head against Home Assistant.  Worked and ran fine for a couple of days and now it boots to a blank black window.  Rebuilt the whole VM.  Maybe time to focus on another project for a bit.
+
