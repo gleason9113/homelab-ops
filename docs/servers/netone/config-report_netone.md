@@ -1,7 +1,7 @@
 # System Configuration Report
 
 **Generated On:** Thu Oct 15 11:04:23 PM UTC 2026
-**Target Host:** netone
+**Target Host:** example.host
 
 ---
 
@@ -9,8 +9,8 @@
 
 | Parameter | Value |
 | :--- | :--- |
-| **Hostname** | netone |
-| **FQDN** | netone |
+| **Hostname** | example.host |
+| **FQDN** | example.host |
 | **OS Distribution** | Ubuntu 26.04 LTS |
 | **Kernel Version** | 7.0.0-29-generic |
 | **Architecture** | x86_64 |

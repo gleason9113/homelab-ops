@@ -1,7 +1,7 @@
 # System Documentation Report
 
 **Generated On:** Mon Oct 19 05:29:23 PM UTC 2026
-**Target Host:** netone
+**Target Host:** example.host
 
 ---
 
@@ -9,8 +9,8 @@
 
 | Parameter | Value |
 | :--- | :--- |
-| **Hostname** | netone |
-| **FQDN** | netone |
+| **Hostname** | example.host |
+| **FQDN** | example.host |
 | **OS Distribution** | Ubuntu 26.04.1 LTS |
 | **Kernel Version** | 7.0.0-29-generic |
 | **Architecture** | x86_64 |
@@ -26,7 +26,7 @@
 | **CPU Model** | Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz |
 | **CPU Topology (Sockets / Cores / Threads)** | 1 / 4 / 4 |
 | **Total Memory** | 15Gi |
-| **Default Network Gateway** | 192.168.2.1 |
+| **Default Network Gateway** | 192.xx.xx.xx |
 
 ---
 
@@ -53,7 +53,7 @@
 | :--- | :--- | :--- | :--- |
 | docker-proxy | udp | 51820 | 0.0.0.0 |
 | docker-proxy | udp | 53 | 0.0.0.0 |
-| systemd-network | udp | 68 | 192.168.2.20%eno1 |
+| systemd-network | udp | 68 | 192.xx.xx.xx%eno1 |
 | chronyd | udp | 323 | 127.0.0.1 |
 | chronyd | udp | 323 | [::1] |
 | docker-proxy | tcp | 8080 | 0.0.0.0 |
